@@ -1,0 +1,38 @@
+name: sr_delivery
+description: "SR Department Store — Ice Cream & Frozen delivery app."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Typography (Inter — closest free face to Apple's SF Pro)
+  google_fonts: ^6.2.1
+
+  # Formatting (currency / dates)
+  intl: ^0.19.0
+
+  # Network images (used once the real catalog ships images)
+  cached_network_image: ^3.3.1
+
+  # Lightweight, declarative animations for the Apple-style motion
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # No bundled image assets — product visuals are rendered as branded
+  # gradients today, and swap to network images when the catalog adds them.
